@@ -1,0 +1,88 @@
+.expense-container {
+    width: 80vw;
+    border: 1px solid rgb(59, 6, 6);
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 2%;
+    font-weight: 500;
+}
+
+.expense-item {
+    padding-bottom: 1%;
+}
+
+.edit-delete {
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+
+
+.buttonDelete {
+    background-color: transparent;
+    border: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.buttonDelete:hover {
+    background-color: red;
+    font-size: 15px;
+    color: white
+}
+
+
+@media only screen and (min-width: 768px) {
+    .expense-container {
+        margin: 15px 15%;
+        display: flex;
+        padding: 0;
+    }
+    
+    .expense-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .expense-item {
+        padding: 1.5rem 2rem;
+        width: 8vw;
+    }
+    .ExpenseItem__Info {
+        font-size: 0.8rem;
+    }
+    .edit-delete {
+        height: 80px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 968px) {
+    .expense-item {
+        width: 9vw;
+    }
+    .ExpenseItem__Info {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 1168px) {
+    .expense-container {
+        width: 75vw;
+    }
+    .expense-item {
+        width: 10vw;
+        padding-top: 3.75%;
+    }
+    .ExpenseItem__Info {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1368px) {
+    .expense-container {
+        width: 70vw;
+    }
+}

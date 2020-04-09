@@ -1,0 +1,41 @@
+.Header {
+    height: 50px;
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    background-color: rgb(206, 27, 27);
+}
+
+.Header h1 {
+    margin: auto 1vw;
+    font-size: 1.15rem;
+}
+
+.Header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.SignOut {
+    margin: auto 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.SignOut a:hover {
+    color: #F2F2F2;
+}
+
+@media screen and (min-width: 768px) {
+    .Header a {
+        font-size: 1.5rem;
+    }
+    .SignOut {
+        margin-top: 10px;
+    }
+    .SignOut a {
+        font-size: 1.3rem;
+        margin-right: 20px;
+    }
+}

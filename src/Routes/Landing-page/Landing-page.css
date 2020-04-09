@@ -1,0 +1,113 @@
+.container {
+    text-align: center;
+}
+
+.info {
+    width: 80%;
+    margin: 0 auto;
+    animation: moveInBottom 0.5s;
+}
+
+.heading {
+    margin-top: 50px;
+    font-size: 300%;
+    text-shadow: 2px 2px 5px rgb(158, 35, 35);
+}
+
+.line{
+    background: linear-gradient(to right,rgb(245, 16, 16), rgb(223, 118, 104), rgb(116, 12, 12));
+    height: 1px;
+    border: none;
+    width: 50%;
+    
+}
+
+.landingpage {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 22px;
+    text-shadow: 2px 2px 5px rgb(158, 35, 35);
+}
+
+
+.image-sign {
+    height: 90px;
+}
+
+.Copyright {
+    margin: 15% auto;
+    text-align: center;
+    color: #360000;
+}
+
+.Copyright a {
+    text-decoration: none;
+}
+
+.Copyright a:hover {
+    color: #cc0000;
+}
+
+
+@media only screen and (min-width: 420px) {
+    .landingpage-description {
+        width: 90%;
+        font-size: 16px;
+    }
+    .Copyright {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .landingpage {
+        width: 85%;
+        font-size: 18px;
+    }
+    .Copyright {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    .landingpage {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .landingpage {
+        width: 75%;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .landingpage {
+        width: 70%;
+        font-size: 24px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .hr {
+        width: 60%;
+    }
+  
+    .Copyright {
+        margin: 10% auto;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+   
+    .Copyright {
+        margin: 5% auto;
+    }
+}
+
+

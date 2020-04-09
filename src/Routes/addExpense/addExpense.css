@@ -1,0 +1,92 @@
+.AddExpenseForm {
+    width: 60%;
+    height: 500px;
+    margin: 100px auto;
+    padding:50px;
+    background: linear-gradient(to bottom right,#252727 0,#c51a1a);
+    color:rgb(248, 248, 248);
+    border:2px solid rgb(255, 0, 0);
+    border-radius: 1000px;
+    font-weight: 700;
+}
+
+.AddExpenseFormOptions {
+    display: block;
+}
+
+input#date, input#amount, select#style {
+    width: 200px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 2%;
+}
+
+select#style {
+    height: 40px;
+}
+
+.description {
+    width: 75%;
+    margin: 0;
+    font-size: 17.5px;
+}
+
+#description {
+    width: 200px;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 100px;
+    padding: 2%;
+    font-size: 15px;
+}
+
+.required {
+    color: #CA1551;
+}
+
+.ExpenseFormButton {
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius:5px;
+    border:none;
+    padding:10px 25px;
+    color:white;
+    text-shadow:1px 1px 1px #000000; 
+    background-color: black;
+    font-size: 20px;
+}
+
+.ExpenseFormButton:hover {
+    background-color: rgb(196, 30, 30);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 355px) {
+    .AddExpenseForm {
+        height: 450px;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .AddExpenseForm {
+        width: 45%;
+        height: 400px;
+        margin-left: 20%;
+    }
+    input#date, input#amount, select#style {
+        width: 300px;
+        height: 25px;
+        padding: 2px;
+    }
+    #description {
+        width: 290px;
+        height: 60px;
+    }
+}

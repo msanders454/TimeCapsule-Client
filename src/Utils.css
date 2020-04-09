@@ -1,0 +1,109 @@
+.Hyph {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Input, .Textarea {
+    border: 1px solid #dddddd;
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.Input::placeholder, .Textarea::placeholder {
+    color: #cccccc;
+}
+
+.Textarea {
+    resize: vertical;
+}
+
+.Button {
+    order: 1px solid #aaaaaa;
+    background-color: #eeeeee;
+    font-size: 1.1em;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.Required {
+    color: #CA1551;
+    font-weight: bold;
+}
+
+.Section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Section--list {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Form {
+    width: 60%;
+    height: 300px;
+    margin: 100px auto 0;
+    padding: 50px;
+    background: linear-gradient(to right, #0cebeb 0%, #20e3b2 51%, #0cebeb 100%);
+    color: #333333;
+    border: 2px solid #C2D6FF;
+    border-radius: 40px;
+}
+
+.Input2 {
+    margin: auto auto;
+    border: 1px solid #DADADA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 2%;
+    height: 25px;
+    width: 160px;
+    box-shadow: 0 0 8px;
+    border-radius: 5px;
+    border: 1px solid #cbcbcb;
+}
+
+.Button2 {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #949494;
+    background-color: #56B0FE;
+    font-size: 16px;
+}
+
+.Button2:hover {
+    background-color: #117FDF;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 420px) {
+    .Input2 {
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .Input2 {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Form {
+        width: 350px;
+        height: 400px;
+    }
+    .Input2 {
+        width: 225px;
+    }
+}

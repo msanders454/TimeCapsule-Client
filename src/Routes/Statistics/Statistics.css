@@ -1,0 +1,162 @@
+.statistic p {
+    margin-top: 10%;
+    font-size: 24px;
+}
+
+
+.RedZoneAlert{
+    text-align:center;
+    color: rgb(235, 235, 235);
+}
+
+.URNTheRZ{
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+    animation: opacity 2s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 1;
+    }
+
+    25%{
+        opacity: 0
+    }
+  
+    50% {
+      opacity: 1
+    }
+    75%{
+        opacity: 0
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.stats {
+    text-align: center;
+}
+
+.stats0 {
+    animation: moveInLeft .5 ease-out .25s;
+}
+
+.stats1 {
+    animation: moveInLeft .5 ease-out .5s;
+}
+
+.stats2 {
+    animation: moveInLeft .5 ease-out .75s;
+}
+
+.stats3 {
+    animation: moveInLeft .5 ease-out 1s;
+}
+
+.stats3 {
+    animation: moveInLeft .5 ease-out 1.25s;
+}
+
+.statTitle {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.charts {
+    width: 95vw;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.doughnutChart {
+    text-align: center;
+}
+@media screen and (min-width: 568px) {
+    
+    .barChart {
+        width: 500px;
+        height: 400px;
+        margin-top: 75px;
+    }
+    .doughnutChart {
+        width: 600px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .statistic {
+        margin-left: 15vw;
+    }
+    .statistic p {
+        margin-left: 10%;
+        display: inline-block;
+        font-size: 24px;
+    }
+    .charts__container {
+        width: 100vw;
+        margin-top: 100px;
+        margin-left: 10%;
+    }
+    .barChart {
+        width: 500px;
+        height: 400px;
+        margin-top: 75px;
+    }
+    .doughnutChart {
+        width: 600px;
+        margin-top: 50px;
+    }
+    
+}
+
+@media screen and (min-width: 1168px) {
+    .statistic p {
+        margin-left: 17.5%;
+    }
+    .charts__container {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+    .barChart {
+        width: 400px;
+        height: 400px;
+        margin-top: 50px;
+    }
+    .doughnutChart {
+        width: 600px;
+        margin-top: 50px;
+    }
+    
+}
+
+@media screen and (min-width: 1268px) {
+    .doughnutChart {
+        width: 650px;
+    }
+}
+
+@media screen and (min-width: 1368px) {
+    .barChart {
+        width: 450px;
+    }
+    .doughnutChart {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1468px) {
+    .barChart {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1568px) {
+    .barChart {
+        width: 600px;
+    }
+}
