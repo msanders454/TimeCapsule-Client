@@ -26,7 +26,7 @@ export default class RedZoneAmount extends React.Component {
     };
 
     componentDidMount() {
-        fetch(`https://serene-ridge-50508.herokuapp.com/users/patch/${this.context.usernumber}`, {
+        fetch(`https://serene-ridge-50508.herokuapp.com/api/users/patch/${this.context.usernumber}`, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
@@ -61,7 +61,7 @@ handlePatch = (red_zone_amount, callback) => {
     console.log(red_zone_amount)
     console.log(callback)
     this.setState({ error: null })
-    fetch(` https://git.heroku.com/serene-ridge-50508.git/users/patch/${this.context.usernumber}`, {
+    fetch(`https://serene-ridge-50508.herokuapp.com/api/users/patch/${this.context.usernumber}`, {
         method: 'PATCH',
         body: JSON.stringify(red_zone_amount),
         headers: {

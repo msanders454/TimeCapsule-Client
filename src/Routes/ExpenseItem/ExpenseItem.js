@@ -7,7 +7,7 @@ import './ExpenseItem.css';
 function deleteExpense(expenseId, callback) {
     let confirmDelete = window.confirm('Confirm to delete this expense? Deleted expenses CANNOT be recovered!');
     if (confirmDelete) {
-        fetch(`https://serene-ridge-50508.herokuapp.com/expenses/${expenseId}`, {
+        fetch(`https://serene-ridge-50508.herokuapp.com/api/expenses/${expenseId}`, {
             method: "DELETE",
             headers: {
                 "content-type": "application/json"
