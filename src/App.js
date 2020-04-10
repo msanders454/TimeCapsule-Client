@@ -100,7 +100,7 @@ class App extends Component {
 
 
     getList() {
-        fetch(`https://serene-ridge-50508.herokuapp.com/api/expenses/${this.state.usernumber}`, {
+        fetch(`https://serene-ridge-50508.herokuapp.com/api/expenses/user/${this.state.usernumber}`, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
