@@ -1,6 +1,6 @@
 const AuthApiService = {
     postLogin({ user_name, password }) {
-        return fetch(`http://localhost:8000/auth/login`, {
+        return fetch(`https://serene-ridge-50508.herokuapp.com/auth/login`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -15,7 +15,7 @@ const AuthApiService = {
     },
 
     postUser(user) {
-        return fetch(`http://localhost:8000/users`, {
+        return fetch(`https://serene-ridge-50508.herokuapp.com/users`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

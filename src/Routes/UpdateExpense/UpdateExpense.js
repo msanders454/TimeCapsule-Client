@@ -16,7 +16,7 @@ export default class UpdateExpense extends Component {
     };
     componentDidMount() {
         const { expenseId } = this.props.match.params;
-        fetch(config.API_ENDPOINT + `/${expenseId}`, {
+        fetch(`https://serene-ridge-50508.herokuapp.com/expenses/${expenseId}`, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
