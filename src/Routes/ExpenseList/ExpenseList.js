@@ -117,14 +117,15 @@ export default class ExpenseList extends Component {
                         onChange={this.filterCategory}
                     >
                         <option value='AllCategories'>All Categories</option>
-                        <option value='Bills or Loans'>Bills/Loans</option>
+                        <option value='Credit Cards or Loans'>Credit Cards or Loans</option>
                         <option value='Entertainment'>Entertainment</option>
                         <option value='Food'>Food</option>
-                        <option value='Housing'>Personal</option>
+                        <option value='Housing and Utilities'>Housing and Utilities</option>
                         <option value='Transportation'>Transportation</option>
                         <option value='Travel'>Travel</option>
                         <option value='Family'>Family</option>
-                        <option value='Life Style'>Life Style</option>
+                        <option value='Personal care and Clothing'>Personal care and Clothing</option>
+                        <option value='Other'>Other</option>
                     </select>
                 </section>
 
