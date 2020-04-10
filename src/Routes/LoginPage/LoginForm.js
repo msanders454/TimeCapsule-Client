@@ -55,7 +55,7 @@ export default class LoginForm extends Component {
                             name='username'
                             id='user_name'
                             autoComplete='off'
-                            placeholder='DemoUser'
+                            placeholder='Demo123'
                        ></Input2>
                     </div>
 
@@ -68,7 +68,7 @@ export default class LoginForm extends Component {
                             name='password'
                             type='password'
                             id='password'
-                            placeholder='Demouser123!'
+                            placeholder='Demo123@'
                             autoComplete='off'
                         ></Input2>
                     </div>
