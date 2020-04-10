@@ -35,7 +35,7 @@ class App extends Component {
     this.setState({ 
         userName: newName
      });
-     fetch(`https://serene-ridge-50508.herokuapp.com/users/${this.state.userName}`, {
+     fetch(`https://serene-ridge-50508.herokuapp.com/api/users/${this.state.userName}`, {
           method: "GET",
           headers: {
               "content-type": "application/json",
@@ -100,7 +100,7 @@ class App extends Component {
 
 
     getList() {
-        fetch(`https://serene-ridge-50508.herokuapp.com/expenses/user/${this.state.usernumber}`, {
+        fetch(`https://serene-ridge-50508.herokuapp.com/api/users/${this.state.usernumber}`, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
