@@ -3,7 +3,6 @@ import RedZoneContext from '../../RedZoneContext';
 import { Bar, Doughnut } from 'react-chartjs-2';
 import './Statistics.css';
 
-
 let check = true;
 export default class Statistics extends Component {
     constructor(props) {
