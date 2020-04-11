@@ -16,8 +16,6 @@ export default class AddExpense extends Component {
 
     handleSubmit = (expense, callback) => {
         this.setState({ error: null })
-        console.log(callback)
-        console.log(expense)
         fetch(config.API_ENDPOINT, {
             method: "POST",
             body: JSON.stringify(expense),
@@ -31,9 +29,7 @@ export default class AddExpense extends Component {
                 return res.json();
             })
             .then(data => {
-
                 callback(data);
-                console.log(data);
                 this.context.addExpense(data);
                 this.props.history.push("/expenses");
             })

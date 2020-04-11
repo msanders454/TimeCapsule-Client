@@ -10,7 +10,6 @@ export default class ExpenseList extends Component {
             expenses: props.expenses || [],
             red_zone_amount: props.red_zone_amount,
         };
-        console.log(this.props)
     }
 
     static contextType = RedZoneContext;

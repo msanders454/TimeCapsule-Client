@@ -37,7 +37,6 @@ export default class ExpenseForm extends Component {
         this.setState({ 
             style: e.target.value 
         });
-        console.log(this.state.style)
     };
 
     handleChangeDescription = e => {
@@ -76,7 +75,7 @@ export default class ExpenseForm extends Component {
 
     render() {
         const { error, onCancel } = this.props;
-        const { id, date, amount, style, description, usernumber } = this.state;
+        const { id, date, amount, style, description } = this.state;
         return (
             <form className='AddExpenseForm' onSubmit={this.handleSubmit}>
                 <div className='error' role='alert'>

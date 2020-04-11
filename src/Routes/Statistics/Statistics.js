@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import RedZoneContext from '../../RedZoneContext';
 import { Bar, Doughnut } from 'react-chartjs-2';
 import './Statistics.css';
-import ReactDOM from 'react-dom';
+
 
 let check = true;
 export default class Statistics extends Component {
@@ -180,7 +180,6 @@ export default class Statistics extends Component {
         money_left = this.context.red_zone_amount-total_amount_Spend;
 
         if( total_amount_Spend > this.context.red_zone_amount ){
-            console.log(true);
             mystyle = {
                 backgroundColor: "rgb(206, 27, 27)",
                 padding: "10px",
@@ -189,7 +188,6 @@ export default class Statistics extends Component {
               };
         }
         if( total_amount_Spend <= this.context.red_zone_amount ){
-            console.log(false)
              mystyle = {
                 padding: "0px",
                 visibility: "hidden",

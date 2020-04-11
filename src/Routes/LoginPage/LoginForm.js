@@ -25,7 +25,6 @@ export default class LoginForm extends Component {
             password: password.value,
         })
         .then(res => {
-            console.log(user_name.value)
             this.context.updateUserInfo(user_name.value)
             user_name.value = ''
             password.value = ''

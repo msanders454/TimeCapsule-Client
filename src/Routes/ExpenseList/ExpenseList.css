@@ -8,8 +8,8 @@
 }
 
 .state-amount{
-    margin-bottom: 2%;
-    margin-left: 3%;
+    margin-right: 16%;
+    margin-top: 14%;
     display: flex;
     font-size: 24px;
 }
@@ -35,12 +35,36 @@
     text-align: center;
 }
 
-
-@media only screen and (min-width: 420px) {
-    .ExpenseList__Select {
-        font-size: 0.75rem;
+@media only screen and (min-width: 374px) {
+    .state-amount{
+        margin-right: 26%;
+        margin-top: 12.3%;
+        display: flex;
+        font-size: 24px;
     }
 
+}
+
+@media only screen and (min-width: 410px) {
+    .state-amount{
+        margin-right: 29%;
+        margin-top: 11.2%;
+        display: flex;
+        font-size: 24px;
+    }
+    .ExpenseList__Select {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 469px) {
+    .state-amount{
+        margin-right: 2%;
+        margin-top: 0.25%;
+        display: flex;
+        font-size: 24px;
+    }
 }
 
 @media only screen and (min-width: 520px) {
@@ -51,14 +75,14 @@
 
 @media only screen and (min-width: 620px) {
     .ExpenseList__Select {
-        font-size: 0.85rem;
+        font-size: 12.9px;
         padding: 0.05%;
     }
 }
 
 @media only screen and (min-width: 720px) {
     .ExpenseList__Select {
-        font-size: 0.9rem;
+        font-size: 14.5px;
     }
 }
 

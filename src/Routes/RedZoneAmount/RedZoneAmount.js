@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import config from '../../config';
+import React  from 'react';
 import RedZoneContext from '../../RedZoneContext'
-import ExpenseForm from '../../ExpenseForm/ExpenseForm';
 import { Required } from '../../Utils';
 import './RedZoneAmount.css';
 
@@ -58,8 +56,6 @@ export default class RedZoneAmount extends React.Component {
 
     
 handlePatch = (red_zone_amount, callback) => {
-    console.log(red_zone_amount)
-    console.log(callback)
     this.setState({ error: null })
     fetch(`https://serene-ridge-50508.herokuapp.com/api/users/patch/${this.context.usernumber}`, {
         method: 'PATCH',
@@ -74,12 +70,10 @@ handlePatch = (red_zone_amount, callback) => {
         })
         .then(() => {
             callback(callback)
-            console.log(red_zone_amount)
             this.context.updateRedZoneAmount(red_zone_amount.red_zone_amount)
             this.props.history.push('/expenses')
         })
         .catch(error => {
-            console.error("High error occured" + error)
             this.setState({ error })
         })
 }
@@ -108,7 +102,6 @@ handlePatch = (red_zone_amount, callback) => {
 
     render() {
         const { red_zone_amount } = this.state;
-        console.log(this.state);
             return (
                 <div className='AddExpenseForm__Options'>
                   <form className='AddExpenseForm' onSubmit={this.handleSubmit}>

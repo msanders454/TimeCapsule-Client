@@ -12,7 +12,7 @@ import UpdateExpense from './Routes/UpdateExpense/UpdateExpense';
 import SideBar from './SideBar/Sidebar';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import RedZoneContext from './RedZoneContext';
-import config from './config';
+
 
 const exclusionArray = ["/", "/login", "/register"];
 class App extends Component {
@@ -31,7 +31,6 @@ class App extends Component {
 
 
   updateUserInfo  = newName => {
-    console.log(newName);
     this.setState({ 
         userName: newName
      });
@@ -43,10 +42,8 @@ class App extends Component {
       })
           .then(res => {
               if (!res.ok) {
-                  console.log('not ok')
                   throw new Error(res.status);
               }
-              console.log('is ok')
               return res.json();
           })
           .then(this.getUserInfo)
@@ -54,12 +51,10 @@ class App extends Component {
   };
 
   getUserInfo  = user => {
-    console.log(user);
     this.setState({ 
       usernumber: user.id,
       red_zone_amount: user.red_zone_amount
    });
-   console.log(this.state);
    this.getList()
 };
 

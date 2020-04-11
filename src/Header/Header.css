@@ -8,7 +8,9 @@
 
 .Header h1 {
     margin: auto 1vw;
-    font-size: 1.15rem;
+    font-size: 23px;
+    color: #ffffff;
+    margin-right: 10px;
 }
 
 .Header a {
@@ -19,12 +21,8 @@
 
 .SignOut {
     margin: auto 5px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
-}
-
-.SignOut a:hover {
-    color: #F2F2F2;
 }
 
 @media screen and (min-width: 768px) {

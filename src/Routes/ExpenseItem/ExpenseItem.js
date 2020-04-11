@@ -1,6 +1,5 @@
 import React from 'react';
 import RedZoneContext from '../../RedZoneContext';
-import config from '../../config';
 import { Link } from 'react-router-dom';
 import './ExpenseItem.css';
 

@@ -9,7 +9,7 @@ const LandingPage = () => {
             <div className='info'>
                 <h1 className='heading'>RedZone</h1>
                 <hr className='line'></hr>
-                <p className='landingpage'>Keeping track of your spending. Use make users keep track of thier money easier Remember to avoid the redzone. For a demonstration, log in with "Demo123" as the Username and "Demo123@" as the Password.</p>
+                <p className='landingpage'>Keeping track of your daily spending. Use this app in order to keep track of spending habits. Remember to avoid the redzone. For a demonstration, log in with "Demo123" as the Username and "Demo123@" as the Password.</p>
             </div>
             <div className='image'>
                 <img

@@ -11,7 +11,6 @@ class RegistrationPage extends Component {
     };
 
     handleREgistrationSuccess = () => {
-        console.log(this)
         const { history } = this.props;
         history.push('/login');
     };

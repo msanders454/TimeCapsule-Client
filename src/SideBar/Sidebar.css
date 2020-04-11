@@ -13,6 +13,7 @@
 li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-size: 13px;
 }
 
 .active {
@@ -50,11 +51,10 @@ li {
         position: fixed;
         border: 0px solid;
         border-radius: 5px;
-        width: 120px;
-        height: 250px;
+        width: 150px;
+        height: 270px;
         display: block;
         padding: 0;
-        font-size: 13px;
         background: linear-gradient(to right,rgb(206, 27, 27) 0%, #e9b1b1 50%, rgb(243, 222, 222) 100%);
     }
     li a {
@@ -68,19 +68,19 @@ li {
 @media only screen and (min-width: 968px) {
     .sidebar {
         width: 190px;
-        font-size: 14px;
     }
     li a {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 1168px) {
     .sidebar {
+        height: 300px;
         width: 200px;
         font-size: 17px;
     }
     li a {
-        font-size: 17px;
+        font-size: 20px;
     }
 }
