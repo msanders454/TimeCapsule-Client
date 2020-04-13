@@ -29,10 +29,10 @@ Feel free to also create an account if you like.
 
 ### `Screen Shots`
 
-![Login Page](src/Loginpage.png)
-![Expense List](src/Images/AddExpense.png)
-![Add Expense](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/AddExpense.PNG)
-![Statistics](src/Statistics.png)
+![Login Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/Loginpage.png)
+![Expense List Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/Expenselist.PNG)
+![Add Expense Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/AddExpense.PNG)
+![Statistics/ RedZone Alert Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/Statistics.PNG)
 
 ### Tech Stack
 
