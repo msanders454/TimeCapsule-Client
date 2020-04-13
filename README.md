@@ -30,8 +30,8 @@ Feel free to also create an account if you like.
 ### `Screen Shots`
 
 ![Login Page](src/Loginpage.png)
-![Expense List](src/AddExpense.png)
-![Add Expense](src/ExpenseList.png)
+![Expense List](src/Images/AddExpense.png)
+![Add Expense](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/AddExpense.PNG)
 ![Statistics](src/Statistics.png)
 
 ### Tech Stack
