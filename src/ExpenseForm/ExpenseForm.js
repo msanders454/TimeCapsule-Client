@@ -96,7 +96,7 @@ export default class ExpenseForm extends Component {
                 </div>
 
                 <div className='ExpenseFormOptions'>
-                    <label htmlFor='AddExpenseFormlabel'>($) Amount<Required className='required' /></label>
+                    <label htmlFor='AddExpenseFormlabel'> Amount<Required className='required' /></label>
                     <input
                         name='amount'
                         type='number'

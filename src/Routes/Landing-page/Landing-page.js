@@ -9,7 +9,7 @@ const LandingPage = () => {
             <div className='info'>
                 <h1 className='heading'>RedZone</h1>
                 <hr className='line'></hr>
-                <p className='landingpage'>Keeping track of your daily spending. Use this app in order to keep track of spending habits. Remember to avoid the redzone. For a demonstration, log in with "Demo123" as the Username and "Demo123@" as the Password.</p>
+                <p className='landingpage'>Use this app in order to keep track of spending habits. You can look at list and charts of your expenses. Remember to avoid the redzone. Log in with "Demo123" as the Username and "Demo123@" as the Password in order to try out the demo.</p>
             </div>
             <div className='image'>
                 <img
@@ -18,7 +18,6 @@ const LandingPage = () => {
                     className='image-sign'
                 />
             </div>
-            <div className='Copyright'>Copyright &copy; 2020 - <a href='https://github.com/msanders454'>Michael Sanders</a></div>
         </div>
     )
 }

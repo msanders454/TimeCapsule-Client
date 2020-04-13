@@ -36,27 +36,10 @@
     height: 90px;
 }
 
-.Copyright {
-    margin: 15% auto;
-    text-align: center;
-    color: #360000;
-}
-
-.Copyright a {
-    text-decoration: none;
-}
-
-.Copyright a:hover {
-    color: #cc0000;
-}
-
 
 @media only screen and (min-width: 420px) {
     .landingpage-description {
         width: 90%;
-        font-size: 16px;
-    }
-    .Copyright {
         font-size: 16px;
     }
 }
@@ -64,9 +47,6 @@
 @media only screen and (min-width: 520px) {
     .landingpage {
         width: 85%;
-        font-size: 18px;
-    }
-    .Copyright {
         font-size: 18px;
     }
 }
@@ -99,17 +79,7 @@
     .hr {
         width: 60%;
     }
-  
-    .Copyright {
-        margin: 10% auto;
-    }
-}
 
-@media only screen and (min-width: 1300px) {
-   
-    .Copyright {
-        margin: 5% auto;
-    }
 }
 
 
