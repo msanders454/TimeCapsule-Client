@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import React, { Component } from 'react';
 import RedZoneContext from '../../RedZoneContext';
@@ -6,6 +7,10 @@ import AuthApiService from '../../services/auth-api-service';
 import { Button2, Form, Input2, Required } from '../../Utils';
 import './LoginForm.css';
 
+
+/*
+* Used to create login form and to activated JWT Authentication.
+*/ 
 export default class LoginForm extends Component {
     static contextType = RedZoneContext;
 
@@ -14,7 +19,9 @@ export default class LoginForm extends Component {
     }
 
     state = { error: null }
-
+/*
+*Function used compare user info with the credentials and recieve a token for access.
+*/ 
     handleSubmitJwtAuth = ev => {
         ev.preventDefault()
         this.setState({ error: null })

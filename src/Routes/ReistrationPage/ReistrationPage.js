@@ -1,10 +1,14 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { Section } from '../Components/Utils/Utils';
 import RegistrationForm from '../Components/RegistrationForm/RegistrationForm';
 
+
+/*
+* Used to create the Registration forms and to direct the render after registering.
+*/ 
 class RegistrationPage extends Component {
     static defaultProps = {
-        test: 'asdfsadf',
         history: {
             push: () => {}
         }

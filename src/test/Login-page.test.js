@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
 import React from "react";
 import { shallow, configure } from "enzyme";
-import SideBar from "../SideBar/SideBar";
+import LoginPage from "../Routes/LoginPage/LoginPage";
 import Adapter from "enzyme-adapter-react-16";
  
 configure({ adapter: new Adapter() });
-test("should render SideBar correctly", () => {
-  const wrapper = shallow(<SideBar />);
+test("should render LoginPage correctly", () => {
+  const wrapper = shallow(<LoginPage />);
   expect(wrapper).toMatchSnapshot();
 });

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import LandingPage from './Routes/Landing-page/Landing-page';
 import Header from './Header/Header';
@@ -13,23 +14,29 @@ import SideBar from './SideBar/Sidebar';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import RedZoneContext from './RedZoneContext';
 
-
+/*
+* Main App renders.
+*/ 
 const exclusionArray = ["/", "/login", "/register"];
 class App extends Component {
-
+/*
+* Main State data.
+*/ 
   constructor(props) {
     super(props);
       this.state = {
         expenses: [],
-        userName: "test123",
-        usernumber: 0,
+        userName: "Demo123",
+        usernumber: 1,
         red_zone_amount: 0,
         RedZoneAlert: false,
         error: null,
         };
     }
 
-
+/*
+* Used to get user data to eventually get the primary key for expenses logs.
+*/ 
   updateUserInfo  = newName => {
     this.setState({ 
         userName: newName
@@ -49,7 +56,9 @@ class App extends Component {
           .then(this.getUserInfo)
           .catch(error => this.setState({ error }));
   };
-
+/*
+*Next functions are made to eventually be past into other components.
+*/ 
   getUserInfo  = user => {
     this.setState({ 
       usernumber: user.id,
@@ -93,7 +102,9 @@ class App extends Component {
         })
     }
 
-
+/*
+* Once we have the primary key we can get expense logs for a specific user.
+*/ 
     getList() {
         fetch(`https://serene-ridge-50508.herokuapp.com/api/expenses/user/${this.state.usernumber}`, {
             method: "GET",
@@ -113,6 +124,9 @@ class App extends Component {
 
     render() {
         const { location } = this.props;
+/*
+* Used to store context info.
+*/ 
         const contextValue = {
             expenses: this.state.expenses,
             userName: this.state.userName,

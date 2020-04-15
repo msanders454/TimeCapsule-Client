@@ -1,6 +1,9 @@
 
 import config from '../config';
 
+/*
+* Functions used to check authentication status fot logging in and getting a token..
+*/ 
 const TokenService = {
     saveAuthToken(token) {
         window.localStorage.setItem(config.TOKEN_KEY, token)

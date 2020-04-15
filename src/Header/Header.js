@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import TokenService from '../services/token-sevice';
 import './Header.css';
 
+/*
+* Used to create the Header and add Login, Log out and Registration opitions.
+*/ 
 export default class Header extends Component {
     handleLogoutClick = () => {
         TokenService.clearAuthToken()

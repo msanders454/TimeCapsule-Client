@@ -1,9 +1,16 @@
+/* eslint-disable react/prop-types */
 import React  from 'react';
 import RedZoneContext from '../../RedZoneContext'
 import { Required } from '../../Utils';
 import './RedZoneAmount.css';
 
 const noop = () => {};
+
+/*
+* Used to patch the redzone amount and change the target amount.
+* Noop is used to have an empty function in order for the code to not break during the first render
+* before componentdidmount.
+*/ 
 export default class RedZoneAmount extends React.Component {
     static contextType = RedZoneContext;
 
@@ -119,7 +126,6 @@ handlePatch = (red_zone_amount, callback) => {
                     <button 
                         type='submit' 
                         className='AddExpenseForm__button'
-                        //onClick={() => this.handleChangeBudget(RedZoneAmount)}
                     >
                         Save
                     </button>

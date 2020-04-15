@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { Section } from '../../Utils'
 
 export default class NotFoundPage extends Component {
+
+/*
+* Error page.
+*/ 
   render() {
     return (
       <Section className='NotFoundPage'>

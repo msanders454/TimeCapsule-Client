@@ -1,8 +1,12 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import RedZoneContext from '../../RedZoneContext';
 import config from '../../config';
 import ExpenseForm from '../../ExpenseForm/ExpenseForm';
 
+/*
+* Used to patch user expense logs.
+*/ 
 export default class UpdateExpense extends Component {
     static contextType = RedZoneContext;
 
@@ -38,7 +42,6 @@ export default class UpdateExpense extends Component {
                 });
             })
             .catch(error => {
-                console.error(error);
                 this.setState({ error });
             });
     }

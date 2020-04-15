@@ -2,6 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
+/*
+* Used to help navigate the sidebar.
+*/ 
 const SideBar = () => {
     return (
         <div className='sidebar'>

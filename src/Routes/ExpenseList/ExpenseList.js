@@ -1,8 +1,14 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import ExpenseItem from '../ExpenseItem/ExpenseItem';
 import RedZoneContext from '../../RedZoneContext';
 import './ExpenseList.css';
 
+
+/*
+* Used to display the expense logs with the help of it's child, Expense Item.
+* This component also features the sorting opitions for the expennse logs.
+*/ 
 export default class ExpenseList extends Component {
     constructor(props) {
         super(props);
@@ -11,7 +17,9 @@ export default class ExpenseList extends Component {
             red_zone_amount: props.red_zone_amount,
         };
     }
-
+/*
+* Data is optain through Context.
+*/ 
     static contextType = RedZoneContext;
     
     sortDateNew = () => {

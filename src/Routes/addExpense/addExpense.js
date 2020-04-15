@@ -1,9 +1,14 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import config from '../../config';
 import RedZoneContext from '../../RedZoneContext'
 import ExpenseForm from '../../ExpenseForm/ExpenseForm';
 import './addExpense.css';
 
+/*
+* Used to add expenses by using post. This data as well as the function to cancel 
+* gets past to expenseform 
+*/ 
 export default class AddExpense extends Component {
     static contextType = RedZoneContext;
 
@@ -15,7 +20,7 @@ export default class AddExpense extends Component {
     }
 
     handleSubmit = (expense, callback) => {
-        this.setState({ error: null })
+        this.setState({ error: null });
         fetch(config.API_ENDPOINT, {
             method: "POST",
             body: JSON.stringify(expense),
@@ -25,7 +30,6 @@ export default class AddExpense extends Component {
         })
             .then(res => {
                 if (!res.ok) return res.json().then(error => Promise.reject(error));
-                console.log(res);
                 return res.json();
             })
             .then(data => {
@@ -34,7 +38,6 @@ export default class AddExpense extends Component {
                 this.props.history.push("/expenses");
             })
             .catch(error => {
-                console.error(error);
                 this.setState({ error });
             });
     }

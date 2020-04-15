@@ -1,17 +1,31 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { Required } from '../Utils';
 import RedZoneContext from '../RedZoneContext'
 
-const noop = () => {};
 
+const noop = () => {};
+/*
+* Used to create the expense forms for adding and updating.
+*/ 
 export default class ExpenseForm extends Component {
     static contextType = RedZoneContext;
+/*
+* Has default props in order for 1st render to not break.
+*/ 
     static defaultProps = {
         onSubmit: noop,
         onCancel: noop,
         expense: {}
     };
-
+/*
+* @expense.id:  Expense id
+* @expense.date:  Date created
+* @expense.amount: Expense Amount
+* @expense.style:  Expense type
+* @expense.description:  Expense description
+* @expense.id:  Secondary key to connect with users server
+*/ 
     state = {
         id: this.props.expense.id || undefined,
         date: this.props.expense.date || "",
@@ -21,6 +35,9 @@ export default class ExpenseForm extends Component {
         usernumber: this.props.expense.usernumber || this.context.usernumber
     };
 
+/*
+* Next 4 functions are used to change the state/ context. 
+*/ 
     handleChangeDate = e => {
         this.setState({ 
             date: e.target.value 
@@ -44,7 +61,10 @@ export default class ExpenseForm extends Component {
             description: e.target.value 
         });
     };
-
+/*
+* submits user input. Obtains onsubmit functiom from addExpense
+* Reset fie
+*/ 
     handleSubmit = e => {
         e.preventDefault();
         const { id, date, amount, style, description, usernumber } = this.state;

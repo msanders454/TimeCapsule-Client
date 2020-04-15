@@ -84,6 +84,14 @@
     .ExpenseList__Select {
         font-size: 14.5px;
     }
+    .RedZone-Budget{
+        margin-left: 35%;
+    }
+    .ExpenseList__Filters {
+        margin-top: 0.5%;
+        display: flex;
+        margin-left: 25%;
+    }
 }
 
 @media only screen and (min-width: 784px) {

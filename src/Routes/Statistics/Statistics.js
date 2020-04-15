@@ -4,6 +4,12 @@ import { Bar, Doughnut } from 'react-chartjs-2';
 import './Statistics.css';
 
 let check = true;
+
+/*
+* Used to display statistical data as well as mini facts about there budget totals. Check helps the user
+* know if they are in the red-zone.
+* All data were from props from App
+*/ 
 export default class Statistics extends Component {
     constructor(props) {
         super(props);
@@ -49,8 +55,7 @@ export default class Statistics extends Component {
                 !this.state.originalExpenses
             ) {
                 this.setExpenses();
-            } else {
-            }
+            } 
         }
     }
 
@@ -70,7 +75,8 @@ export default class Statistics extends Component {
             expenses: this.state.expenses || this.context.expenses
         });
     }
-
+/*Renders used to convert data into graphs.
+*/ 
     render() {
         let mystyle = {
             backgroundColor: "red",
@@ -152,7 +158,7 @@ export default class Statistics extends Component {
         if (this.state.expenses && check) {
             let sum_of_each_category = [];
             let total_entries_of_each_category = [];
-            this.state.categories.forEach((checker, index) => {
+            this.state.categories.forEach((checker) => {
                 let sum = 0,
                     count = 0;
                 this.state.expenses.forEach(category1 => {

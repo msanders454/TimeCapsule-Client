@@ -1,3 +1,7 @@
+/*
+* Used to create the create new accounts by posting in auth/login and in users.
+*/ 
+
 const AuthApiService = {
     postLogin({ user_name, password }) {
         return fetch(`https://serene-ridge-50508.herokuapp.com/api/auth/login`, {

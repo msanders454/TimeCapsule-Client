@@ -1,8 +1,13 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { Button2, Required, Form, Input2 } from '../../Utils';
 import AuthApiService from '../../services/auth-api-service';
 import './ReistrationForm.css';
 
+/*
+* Used to accept user input and check Autherization status to create a new account. 
+*/ 
 export default class RegistrationForm extends Component {
     constructor(props) {
         super(props)
@@ -41,7 +46,7 @@ export default class RegistrationForm extends Component {
             <Form className='RegistrationForm' onSubmit={this.handleSubmit}>
                 <div role='alert'>{error && <p className='red'>{error}</p>}</div>
                 <div className='full_name'>
-                    <h2>Register</h2>
+                    <h2>Register Here</h2>
                     <hr />
                     <label htmlFor='RegistrationForm__full_name'>
                         Full Name <Required />
@@ -70,7 +75,7 @@ export default class RegistrationForm extends Component {
                     <label htmlFor='RegistrationForm__password'>
                         Password <Required />
                     </label>
-                    <p className='PasswordCriteria'>(8 or more characters containing at least ONE of the following: upper-case letter, lower-case letter, number, special character)</p>
+                    <p className='Criteria'>(Must have 8 characters with one upper-case letter, one lower-case letter, one number, an one special character)</p>
                     <Input2
                         className='RegistrationForm__Password__Input'
                         name='password'
@@ -93,7 +98,6 @@ export default class RegistrationForm extends Component {
                     ></Input2>
                 </div>
                 <Button2 type='submit'>Register</Button2>
-                <p className='Note'>Note: You will be redirected to the Log in page upon successful registration.</p>
             </Form>
         );
     }

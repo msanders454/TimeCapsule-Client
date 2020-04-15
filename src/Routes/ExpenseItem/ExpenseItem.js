@@ -1,8 +1,15 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import RedZoneContext from '../../RedZoneContext';
 import { Link } from 'react-router-dom';
 import './ExpenseItem.css';
 
+/*
+* Used to render the items displayed on the expense logs.
+* Props are all user information that were past from ExpenseList
+* This component also has its own function for delete.
+*/ 
 function deleteExpense(expenseId, callback) {
     let confirmDelete = window.confirm('Confirm to delete this expense? Deleted expenses CANNOT be recovered!');
     if (confirmDelete) {
@@ -15,7 +22,7 @@ function deleteExpense(expenseId, callback) {
             .then(res => {
                 if (!res.ok) return res.json().then(error => Promise.reject(error));
             })
-            .then(data => {;
+            .then(data => {
                 callback(expenseId);
             })
             .catch(error => {
