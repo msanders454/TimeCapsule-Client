@@ -11,16 +11,16 @@ export default class IndividualCapsule extends React.Component {
 
     static defaultProps = {
         title: "hi"
-      }
+    };
     constructor() {
         super()
         this.state = {
             disabled: true,
             status: ''
-        }
+        };
     }
 
-    //On mount, check if capsule is already open. If so, start with it open. If not, trigger a check every ten seconds.
+    //On mount, check if capsule is already open. If so, start with it open.
     componentDidMount() {
         let currDate = moment.utc().format()
         let unlockDate = moment.utc(this.props.dateExpires).format()
@@ -51,7 +51,7 @@ export default class IndividualCapsule extends React.Component {
         clearInterval(this.interval)
     }
 
-    //Check date/time every ten seconds. If the date is after the unlock date, unlock the capsule; otherwise keep checking.
+    //Check date/time every ten seconds. If the current date is after the unlock date, unlock the capsule; otherwise keep checking.
     checkDate() {
         let currDate = moment.utc().format()
         let unlockDate = moment.utc(this.props.dateExpires).format()
@@ -66,11 +66,10 @@ export default class IndividualCapsule extends React.Component {
         }
     }
 
-    //When user opens a capsule, set message to LOADING. If this is the first open, make an API call.
-    //Otherwise, just call the function that handles displaying the text.
+    //When user opens a capsule, set message to LOADING.
+    //If opened, just call the function that handles displaying the text.
 
     handleOpen = (id) => {
-        console.log(id)
         if (document.getElementById(`${this.props.title}_contents`).innerHTML === '') {
             this.setState({
                 status: 'LOADING...'
@@ -80,10 +79,10 @@ export default class IndividualCapsule extends React.Component {
                 .catch(err => this.handleCapsuleError(err))
         } else { 
             this.handleAppearance() }
-    }
+    };
 
-    //Change the UI to indicate the capsule has loaded, and alter the (currently hidden) capsule contents depending on
-    //whether it includes an image.
+    //Capsule has loaded, and alter the (currently hidden) capsule notes.
+    //Images are opitional.
     handleNewCapsule = (newCapsule) => {
         document.getElementById(this.props.title + '_button').classList.remove('makeSteady')
         let image = document.createElement('img')
@@ -98,9 +97,10 @@ export default class IndividualCapsule extends React.Component {
         }
         document.getElementById(`${this.props.title}_contents`).append(newCapsule.note)
         this.handleAppearance()
-    }
+    };
 
     //Handle slide-open of the capsule to display its contents, or slide-close.
+    // Capsule button will flash when it is ready to open. Not light when it is locked
     handleAppearance = () => {
         let element = document.getElementById(this.props.title)
         let thisButton = document.getElementById(this.props.title + '_button')
@@ -126,7 +126,7 @@ export default class IndividualCapsule extends React.Component {
                 once: true
             })
         }
-    }
+    };
 
     //If there's an error, put an ALERT in the user's browser.
     handleCapsuleError = (err) => {
@@ -134,7 +134,7 @@ export default class IndividualCapsule extends React.Component {
         alert('There was an error with your request. Please check your internet connection or log out and log back in')
         this.setState({ status: 'OPEN' })
         document.getElementById(this.props.title + '_button').classList.remove('makeSteady')
-    }
+    };
 
     render() {
 

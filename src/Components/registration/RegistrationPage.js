@@ -14,6 +14,8 @@ class RegistrationPage extends Component {
         }
     };
 
+    //Run with valid registration
+
     handleREgistrationSuccess = () => {
         const { history } = this.props;
         history.push('/login');

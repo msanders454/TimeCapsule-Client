@@ -8,6 +8,8 @@ export default class Header extends Component {
         rerendor: false
       };
 
+      //Function used to show logout button
+
     renderLogoutLink() {
         return (
             <div className='Header__logged-in'>
@@ -20,6 +22,7 @@ export default class Header extends Component {
             </div>
         )
     }
+    //Function used to show login button
     renderLoginLink() {
         return (
             <div className='Header__not-logged-in'>
@@ -36,6 +39,7 @@ export default class Header extends Component {
             </div>
         )
     }
+    //Function starts logout function and deletes token
     handleLogoutClick() {
         this.setState({ rerendor: true });
         TokenService.clearAuthToken()
@@ -54,6 +58,6 @@ export default class Header extends Component {
                     }
                 </section>
             </nav>
-        )
+        );
     }
 }

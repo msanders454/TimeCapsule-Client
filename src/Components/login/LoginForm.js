@@ -33,7 +33,6 @@ export default class LoginForm extends Component {
         })
         .then(res => {
             this.context.updateUserInfo(user_name.value)
-            console.log(this.context);
             user_name.value = ''
             password.value = ''
             TokenService.saveAuthToken(res.authToken)

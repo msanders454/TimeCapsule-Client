@@ -1,10 +1,9 @@
-let apiCall = 'https://localhost:8000/api/capsule'
-let AUTH_TOKEN = 'bd990ba4-228b-11ea-978f-2e728ce88125'
+//Functions used to access Time-capsule Api
 
 const ApiService = {
 
     getCapsules() {
-        return fetch('https://localhost:8000/api/capsule')
+        return fetch('https://damp-refuge-24075.herokuapp.com/api/capsule')
         .then(capsules => {
             return (!capsules.ok)
                 ? capsules.json().then(e => Promise.reject(e))
@@ -13,7 +12,7 @@ const ApiService = {
     },
 
     getCapsulesById(id) {
-        return fetch(`http://localhost:8000/api/capsule/${id}`)
+        return fetch(`https://damp-refuge-24075.herokuapp.com/api/capsule/${id}`)
             .then(capsule => {
                 return (!capsule.ok)
                     ? capsule.json().then(e => Promise.reject(e))
@@ -22,7 +21,7 @@ const ApiService = {
     },
 
     deleteCapsules(id) {
-        return fetch(`http://localhost:8000/api/capsule/${id}`, {
+        return fetch(`https://damp-refuge-24075.herokuapp.com/api/capsule/${id}`, {
             method: 'DELETE'
         })
             .then(res => {
@@ -33,8 +32,7 @@ const ApiService = {
     },
 
     postCapsules(newCapsule) {
-        console.log(newCapsule)
-        return fetch('http://localhost:8000/api/capsule', {
+        return fetch('https://damp-refuge-24075.herokuapp.com/api/capsule', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -49,8 +47,7 @@ const ApiService = {
     },
 
     patchCapsules(newCapsule, id) {
-        console.log(id)
-        return fetch(`http://localhost:8000/api/capsule/${id}`, {
+        return fetch(`https://damp-refuge-24075.herokuapp.com/api/capsule/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

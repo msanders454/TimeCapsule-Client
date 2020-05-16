@@ -1,25 +1,26 @@
 
 
-## THe RedZone
+# The Time Capsule
 
-“Remember to avoid the RedZone”
+“Memories will last forever”
 
-### `The Idea`
+## How it works 
 
-When life gets complicated, sometimes when overspend our budget without realizing. Days later we find out that we are out of money for groceries. The Horror. This app allows users to create a budget and find out if they are in the danger zone. Well, we like to call it the RedZone
+This is a fun little app that users can create in order to remember memories/ talk to themselves in the future. Give yourself some life advice, or just a funny Meme to laugh at.
 
-Users will create an account and set up thier budget amount. They can then add expenses to their account and if they enter the danger zone, they will be notified. Remember to avoid the RedZone. This app will help users see exactly where they are on their budget and figure out how much they are spending on an item.
+Users will create an account and and login in. Once they are logged in, they can start making capsules. Once a user has a capsule, it will either be locked or be available to view. The capsules will blink when they are able to view.
 
-### Demo
+## Demo
 
 [Live Page](red-zone-client.now.sh)
 
-### Demo Log in
+## Demo Log in
 
-Live Page
-- username Demo123
+### Live Page
 
-- password Demo123@
+- username Soldier1stClass
+
+- password FF7Remake@Midgar
 
 Feel free to also create an account if you like.
 
@@ -42,6 +43,7 @@ Feel free to also create an account if you like.
 - CSS
 - JavaScript
 - jQuery
+- Moment.js
 
 **Back-End**
 
@@ -50,6 +52,7 @@ Feel free to also create an account if you like.
 - Postgres
 - Mongoose
 - Mocha + Chai
+- Moment.js
 
 **Others**
 

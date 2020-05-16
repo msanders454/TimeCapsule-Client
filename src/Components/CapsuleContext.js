@@ -6,10 +6,6 @@ import React from 'react';
 const CapsuleContext = React.createContext({
     capsules: [],
     users: [],
-    addExpense: () => {},
-    deleteExpense: () => {},
-    updateExpense: () => {},
-    updateUserInfo: () => {},
 });
 
 export default CapsuleContext;

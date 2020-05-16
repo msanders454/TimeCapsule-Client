@@ -1,6 +1,9 @@
+//Functions to verfy login and add new users to users database
+
+
 const AuthApiService = {
     postLogin({ user_name, password }) {
-        return fetch(`http://localhost:8000/api/auth/login`, {
+        return fetch(`https://damp-refuge-24075.herokuapp.com/api/auth/login`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -15,7 +18,7 @@ const AuthApiService = {
     },
 
     postUser(user) {
-        return fetch(`http://localhost:8000/api/users`, {
+        return fetch(`https://damp-refuge-24075.herokuapp.com/api/users`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -28,6 +31,6 @@ const AuthApiService = {
                     : res.json()
                 )
     }
-}
+};
 
 export default AuthApiService;

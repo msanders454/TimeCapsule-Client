@@ -5,15 +5,16 @@ import IndividualCapsule from '../IndivdualCapsule/IndivdualCapsule'
 import './capsules-page.css'
 
 export default class CapsulesPage extends React.Component {
+    //Default props needed to not cause errors before Getting data.
     static defaultProps = {
         capsules: [
             {
                 key : "1",
                 id : "1",
-                
+
             }
         ]
-      }
+    };
     render() {
         return (
             <section>
@@ -34,6 +35,6 @@ export default class CapsulesPage extends React.Component {
                     />
                 )}
             </section>
-        )
+        );
     }
 }

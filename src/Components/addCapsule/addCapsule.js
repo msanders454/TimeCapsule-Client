@@ -11,33 +11,33 @@ class AddCapsulePage extends React.Component {
             note: '',
             imagelink: '',
             time: 'One-minute',
-        }
+        };
     }
 
-    //Every time user changes the form input, update the state.
+    //Every time user changes the form input, update the state. State needs to change in order for user to see newly added capsule
     updateState = (category, value) => {
         this.setState({
             [category]: value
         })
-    }
-
-    //Disable button if input requirements are not met.
-    handleDisabled = () => {
-        if (this.state.title.length >= 3 && this.state.note.length >= 10) { return false }
-        else { return true }
-    }
-
-    //Return to main page, automatically removing incomplete info from form.
-    handleDiscard = () => {
-        this.props.history.push('/capsules')
-    }
+    };
 
     //On press of submit, collect the info and send to API; also return to main capsules page.
     handleSubmit = (event, data) => {
         event.preventDefault()
         this.props.handleAddCapsule(event, data)
         this.props.history.push('/capsules')
-    }
+    };
+
+    //Disable button if input requirements are not met.
+    handleDisabled = () => {
+        if (this.state.title.length >= 3 && this.state.note.length >= 10) { return false }
+        else { return true }
+    };
+    
+    //When the user is not satisfied, they can go back to the main page.
+    handleDiscard = () => {
+        this.props.history.push('/capsules')
+    };
 
     render() {
         const isDisabled = this.handleDisabled()
@@ -71,10 +71,10 @@ class AddCapsulePage extends React.Component {
                     </select>
                     <p className='warning' hidden={!isDisabled}>Title must be at least three characters long. Body must be at least ten characters long.</p>
                     <button id='submit' disabled={isDisabled}>Submit</button>
-                    <button id='discard' onClick={this.handleDiscard}>Discard and Return</button>
+                    <button id='discard' onClick={this.handleDiscard}>Discard</button>
                 </form>
             </section>
-        )
+        );
     }
 }
 export default withRouter(AddCapsulePage)

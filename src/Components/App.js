@@ -29,7 +29,6 @@ class App extends React.Component {
   handleAddCapsule = (event, data) => {
     event.preventDefault()
     let buryDate = (moment())
-    console.log(buryDate)
     let unlockDate = this.getTime(data.time)
     let imageLink = !data.imagelink ? '' : data.imagelink
     let newCapsule = {
@@ -90,7 +89,7 @@ class App extends React.Component {
     this.setState({ 
         userName: newName
      });
-     fetch(`http://localhost:8000/api/users/${this.state.userName}`, {
+     fetch(`https://damp-refuge-24075.herokuapp.com/api/users/${this.state.userName}`, {
           method: "GET",
           headers: {
               "content-type": "application/json",
@@ -150,7 +149,7 @@ class App extends React.Component {
 
   //Call getcapsules function on component mount to get capsules.
   getList() {
-    fetch(`http://localhost:8000/api/capsule/user/${this.state.usernumber}`, {
+    fetch(`https://damp-refuge-24075.herokuapp.com/api/capsule/user/${this.state.usernumber}`, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
