@@ -1,0 +1,87 @@
+.container {
+    text-align: center;
+}
+
+.info {
+    width: 80%;
+    margin: 0 auto;
+    animation: moveInBottom 0.5s;
+}
+.line{
+    background: whitesmoke;
+    height: 1px;
+    border: none;
+    width: 100%;
+    
+}
+
+.landingpage {
+    width: 100%;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 20px;
+    color: white;
+    line-height: 22px;
+    text-shadow: 2px 2px 5px rgb(158, 35, 35);
+}
+
+
+.techimage {
+    width:100%;
+}
+
+
+@media only screen and (min-width: 420px) {
+    .landingpage-description {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .landingpage {
+        width: 85%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    .landingpage {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .landingpage {
+        width: 75%;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .landingpage {
+        width: 70%;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .info {
+        width: 100%;
+        margin: 0 auto;
+        animation: moveInBottom 0.5s;
+    }
+    .landingpage {
+        width: 70%;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .hr {
+        width: 60%;
+    }
+
+}

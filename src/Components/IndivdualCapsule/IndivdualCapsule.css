@@ -1,0 +1,235 @@
+
+
+main {
+    padding: 10px;
+}
+
+.textContainer, .textContainer2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.capsule {
+    margin: 20px auto;
+    margin-bottom:0px; 
+    border-radius: 70px;
+    border: 2px solid rgb(245, 113, 5);
+    border-left: 20px solid rgb(245, 113, 5);
+    border-right: 20px solid rgb(245, 113, 5);
+    background: rgb(13, 11, 85);
+}
+
+.capsuleInfo {
+    border-radius: 10px;
+    color: white;
+    min-width: 50%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    letter-spacing: 5px; 
+    font-weight: bold;  
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    padding: 9px;
+
+}
+
+
+.buriedData{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+.capsuleTitle{
+    text-shadow: 2px 2px 30px rgb(255, 255, 255);
+}
+
+.capsule-contents {
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 2px solid rgb(245, 113, 5);
+    background: rgb(212, 207, 207);
+    opacity: 0.75;
+    position: relative;
+    -webkit-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
+    overflow: hidden;
+    display: none;
+}
+
+.contents-container {
+    background: rgb(230, 230, 230, .5);
+    padding: 5px;
+    text-align:center;
+}
+
+.opencapsule {
+    margin:0 auto;
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+    line-height: .8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border: 0;
+    border: 2px solid rgb(245, 113, 5);
+    animation: blinkingBackground 1s infinite;
+}
+
+@keyframes blinkingBackground{
+    0%		{ background-color: rgb(245, 113, 5);}
+    50%		{ background-color: rgb(13, 11, 85);}
+    100%	{ background-color: rgb(245, 113, 5);}
+}
+
+
+
+.opencapsule:disabled {
+    cursor: auto;
+    animation: blinkingBackground2 1s infinite;
+}
+
+@keyframes blinkingBackground2{
+    0%		{ background-color: rgb(13, 11, 85);}
+    25%		{ background-color: rgb(13, 11, 85);}
+    50%		{ background-color: rgb(13, 11, 85);}
+    75%		{ background-color: rgb(13, 11, 85);}
+    100%	{ background-color: rgb(13, 11, 85);}
+}
+
+.makeSteady {
+    background-color: rgb(13, 11, 85);
+    color: tomato;
+    animation: blinkingBackground3 1s infinite;
+}
+
+@keyframes blinkingBackground3{
+    0%		{ background-color: rgb(245, 113, 5);}
+    25%		{ background-color: rgb(245, 113, 5);}
+    50%		{ background-color: rgb(245, 113, 5);}
+    75%		{ background-color: rgb(245, 113, 5);}
+    100%	{ background-color: rgb(245, 113, 5);}
+}
+
+.makeFlashing {
+    color: rgb(13, 11, 85);
+    background-color: rgb(245, 113, 5);;
+}
+
+
+img {
+    max-height: 250px;
+    position: absolute;
+    margin: auto;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+}
+
+
+.capsulebutton {
+    padding: 0px;
+    background-color: none;
+}
+
+.imagecontainer {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.show {
+    display: block;
+    padding: 0px;
+}
+
+
+.opentext {
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.delete{
+    margin: 20px 10px 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: rgb(8, 6, 56);
+    background: rgb(245, 113, 5);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media only screen and (min-width:500px){
+    .capsule{
+        border-left: 50px solid rgb(245, 113, 5);
+        border-right: 50px solid rgb(245, 113, 5);
+        border-radius: 100px;
+    }
+  }
+
+
+@media only screen and (min-width: 700px){
+
+
+.capsule-contents {
+    margin-left: 75px;
+    margin-right: 75px;
+
+}
+
+.capsule {
+    border-left: 95px solid rgb(245, 113, 5);
+    border-right: 95px solid rgb(245, 113, 5);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+h3{
+    padding: 0;
+}
+
+.buriedData{
+    margin-top:20px;
+    color: white;
+    font-size: 10px;
+    font-size: 10px;
+}
+
+img {
+    max-height: 400px;
+}
+
+.imagecontainer {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.textcontainer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.textContainer2{
+    margin-top:35px;
+}
+
+}

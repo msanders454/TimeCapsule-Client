@@ -1,0 +1,59 @@
+
+.LoginForm {
+    width: 60%;
+    margin-left: 15px;
+}
+.username, .password{
+    color: white;
+    font-weight: 200;
+}
+
+.login{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.alert{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+label {
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+}
+
+.submit {
+    margin: 20px 10px 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: rgb(13, 11, 85);
+    background: rgb(245, 113, 5);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+}
+
+.submit:hover {
+    background-color: rgb(230, 89, 54);
+  }
+
+  @media only screen and (min-width:359px){
+    .LoginForm {
+        margin-left: 25px;
+    }
+  }
+
+  @media only screen and (min-width:765px){
+    .LoginForm {
+        margin-left: 60px;
+    }
+  }

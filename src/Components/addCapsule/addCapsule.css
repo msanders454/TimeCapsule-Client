@@ -1,0 +1,90 @@
+form {
+    display: inline-block;
+    color: white;
+    padding: 25px;
+    margin: 20px auto;
+    margin-bottom:0px; 
+    border-radius: 70px;
+    border: 2px solid rgb(245, 113, 5);
+    border-left: 20px solid rgb(245, 113, 5);
+    border-right: 20px solid rgb(245, 113, 5);
+    background: rgb(13, 11, 85);
+}
+
+label {
+    padding-bottom: 4px;
+    font-size: 17px;
+    font-weight: 100;
+    display: block;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 5px;
+    font-size: 15px;
+    display: block;
+}
+
+.add-Capsules{
+    font-size: 10px;
+}
+
+#submit, #discard {
+    width:100%;
+    margin: 20px 10px 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: rgb(8, 6, 56);
+    background: rgb(245, 113, 5);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+#submit:hover, #discard:hover {
+    background-color: rgb(230, 89, 54);
+  }
+
+
+#submit:disabled {
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: rgb(8, 6, 56);
+    background: white;
+    color: darkgray;
+    cursor: default;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:760px){
+    form {
+        border-left: 60px solid rgb(245, 113, 5);
+        border-right: 60px solid rgb(245, 113, 5);
+    }
+
+    label {
+        font-size: 20px;
+        font-weight: 150;
+        padding-bottom: 6px;
+        padding-top: 13px;
+    }
+    select{
+        width: 75%;
+        font-size: 20px;
+
+    }
+
+    #submit, #discard {
+        width:80%;
+        margin-left: 50px;
+    }
+  }

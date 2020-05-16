@@ -1,0 +1,54 @@
+form{
+    margin-left:16%;
+}
+
+.full_name, .user_name, .password{
+    color: white;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.registration{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+label {
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+}
+
+.submit {
+    margin: 20px 10px 10px;
+    margin-left:20%;
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: rgb(8, 6, 56);
+    background: rgb(245, 113, 5);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+}
+
+.submit:hover {
+    background-color: rgb(230, 89, 54);
+  }
+
+  @media only screen and (min-width:400px){
+    .submit {
+        margin-left:27%;
+    }
+  }
+
+  @media only screen and (min-width:760px){
+    .submit {
+        margin-left:35%;
+    }
+  }

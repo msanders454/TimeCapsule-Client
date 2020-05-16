@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
+import IndividualCapsule from '../Components/IndivdualCapsule/IndivdualCapsule';
 import React from "react";
 import { shallow, configure } from "enzyme";
-import LandingPage from "../Components/landing-page/landing-page";
 import Adapter from "enzyme-adapter-react-16";
  
 configure({ adapter: new Adapter() });
-test("should render AddExpense correctly", () => {
-  const wrapper = shallow(<LandingPage />);
+test("should render IndividualCapsule correctly", () => {
+  const wrapper = shallow(<IndividualCapsule />);
   expect(wrapper).toMatchSnapshot();
 });

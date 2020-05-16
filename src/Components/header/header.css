@@ -1,0 +1,72 @@
+header {
+    margin: 20px;
+}
+
+.Header {
+    height: 50px;
+    letter-spacing: 4px;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 8px;
+    margin-bottom: 45px;
+}
+
+.Header h1 {
+    margin: auto 1vw;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.Header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.SignOut {
+    margin: auto 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 330px) {
+    .Header a {
+        font-size: 3rem;
+    }
+    .SignOut {
+        margin-top: 10px;
+    }
+    .SignOut a {
+        font-size: 1.3rem;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Header a {
+        font-size: 4rem;
+    }
+    .SignOut {
+        margin-top: 10px;
+    }
+    .SignOut a {
+        font-size: 1.3rem;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .Header h1 {
+        font-size: 3rem;
+    }
+    .SignOut {
+        margin-top: 10px;
+    }
+    .SignOut a {
+        font-size: 1.3rem;
+        margin-right: 20px;
+    }
+}
