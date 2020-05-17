@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './Components/App';
-//import * as serviceWorker from './Utilities/serviceWorker';
 import './index.css';
 import { BrowserRouter } from "react-router-dom";
+
+class Doc extends React.Component{
+    componentDidMount(){
+      document.title = "dfsdfsdfsd"
+    }
+  
+    render(){
+      return(
+        <b> test </b>
+      )
+    }
+  }
 
 ReactDOM.render(
     <BrowserRouter>
@@ -12,5 +23,6 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-//serviceWorker.unregister();
+export default Doc;
+
 
