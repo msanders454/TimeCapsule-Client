@@ -12,28 +12,28 @@ Users will create an account and and login in. Once they are logged in, they can
 
 ## Demo
 
-[Live Page](red-zone-client.now.sh)
+[Live Page](https://time-capsule-client.msanders454.now.sh/capsules)
 
 ## Demo Log in
 
 ### Live Page
 
-- username Soldier1stClass
+- username Demo123
 
-- password FF7Remake@Midgar
+- password Demo123@
 
 Feel free to also create an account if you like.
 
 ### Server-side code
 
-[Server-side code](https://github.com/msanders454/RedZone-Server)
+[Server-side code](https://github.com/msanders454/TimeCapsule-API)
 
 ### `Screen Shots`
 
-![Login Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/Loginpage.png)
-![Expense List Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/Expenselist.PNG)
-![Add Expense Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/AddExpense.PNG)
-![Statistics/ RedZone Alert Page](https://github.com/msanders454/Red-Zone-Client/blob/master/src/Images/Statistics.PNG)
+![Mobile Page](https://github.com/msanders454/TimeCapsule-Client/blob/master/src/Images/mobile.PNG)
+![Add Capsule Page](https://github.com/msanders454/TimeCapsule-Client/blob/master/src/Images/add.PNG)
+![Capsule List](https://github.com/msanders454/TimeCapsule-Client/blob/master/src/Images/Capsuleslist.PNG)
+
 
 ### Tech Stack
 
