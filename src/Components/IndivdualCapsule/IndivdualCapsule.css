@@ -177,6 +177,10 @@ img {
     color: #fff;
 }
 
+.delete:hover {
+    background-color: rgb(230, 89, 54);
+  }
+
 @media only screen and (min-width:500px){
     .capsule{
         border-left: 50px solid rgb(245, 113, 5);
