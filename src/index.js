@@ -4,18 +4,6 @@ import App from './Components/App';
 import './index.css';
 import { BrowserRouter } from "react-router-dom";
 
-class Doc extends React.Component{
-    componentDidMount(){
-      document.title = "dfsdfsdfsd"
-    }
-  
-    render(){
-      return(
-        <b> test </b>
-      )
-    }
-  }
-
 ReactDOM.render(
     <BrowserRouter>
         <App />
@@ -23,6 +11,5 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-export default Doc;
 
 
